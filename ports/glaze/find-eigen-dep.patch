@@ -1,0 +1,11 @@
+diff --git a/cmake/install-config.cmake b/cmake/install-config.cmake
+index b6ddfdb..956b384 100644
+--- a/cmake/install-config.cmake
++++ b/cmake/install-config.cmake
+@@ -1 +1,4 @@
+-include("${CMAKE_CURRENT_LIST_DIR}/glazeTargets.cmake")
+\ No newline at end of file
++include(CMakeFindDependencyMacro)
++find_dependency(Eigen3 CONFIG)
++
++include("${CMAKE_CURRENT_LIST_DIR}/glazeTargets.cmake")

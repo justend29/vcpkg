@@ -1,0 +1,12 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 411a0ad..1d0401c 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -37,6 +37,6 @@ if(NOT CMAKE_SKIP_INSTALL_RULES)
+   include(cmake/install-rules.cmake)
+ endif()
+ 
+-if (PROJECT_IS_TOP_LEVEL)
++if (PROJECT_IS_TOP_LEVEL AND FALSE)
+   include(cmake/dev-mode.cmake)
+ endif()
